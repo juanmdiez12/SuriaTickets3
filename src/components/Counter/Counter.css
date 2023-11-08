@@ -1,0 +1,29 @@
+.counterStyle {
+  margin: 5px 1px;
+  background-color: rgb(194, 24, 24);
+  border: 1px solid black;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.counterStyle:hover {
+  background-color: black;
+  border: 1px solid red;
+  transition: all 0.5s ease;
+}
+
+.countSpan {
+  font-display: center;
+  margin: 1px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.counterStrike {
+  display: flex;
+  padding-left: 2rem;
+}

@@ -1,0 +1,20 @@
+.render {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.greeting {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+}

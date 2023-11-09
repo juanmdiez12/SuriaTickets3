@@ -14,7 +14,7 @@ const Footer = () => {
     <div class="copy_footer">
       SuriaTickets &copy; 2023
     </div>
-    <a class="footerLogo" data-aos="zoom-out" data-aos-duration="1000" href=""><img class="footer_logo_img"
+    <a class="footerLogo" data-aos="zoom-out" data-aos-duration="1000" href="/"><img class="footer_logo_img"
         src="./public/images/sol.png" alt="Logo del sol de SuriaTickets" loading="eager"/></a>
   </footer>
   );

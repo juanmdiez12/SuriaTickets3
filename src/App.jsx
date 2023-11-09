@@ -10,7 +10,7 @@ const routes = createBrowserRouter([
   },
   {
     path: "/category/:id",
-    element: <ItemListContainer greeting="" />,
+    element: <ItemListContainer />,
   },
   {
     path: "/item/:id",

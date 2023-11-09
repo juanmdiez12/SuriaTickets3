@@ -17,7 +17,7 @@
 }
 .productTitle {
   font-weight: lighter;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -29,6 +29,12 @@
   background-color: rgb(194, 24, 24);
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.productText {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .buttonDetails {

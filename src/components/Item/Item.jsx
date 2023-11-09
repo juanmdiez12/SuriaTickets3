@@ -9,6 +9,8 @@ const Item = ({ product }) => {
       <Card.Img className="img" variant="top" src={`/images/${product.img}`} />
       <Card.Body>
         <Card.Title className="productTitle">{product.title}</Card.Title>
+        <Card.Text className="productText">{product.description}</Card.Text>
+        <Card.Text className="productText">${product.price}</Card.Text>
         <Link to={`/item/${product.slug}`}>
           <Button className="buttonDetails" variant="primary">
             Detalles

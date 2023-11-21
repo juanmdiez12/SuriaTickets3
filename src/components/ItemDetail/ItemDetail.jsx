@@ -1,10 +1,11 @@
 import Card from "react-bootstrap/Card";
 import { Counter } from "../Counter";
+import { Loader } from "../Loader";
 
 export const ItemDetail = (props) => {
   const { product, loading } = props;
   return loading ? (
-    <span>Cargando...</span>
+    <Loader />
   ) : (
     <div className="render">
       <div className="welcome">

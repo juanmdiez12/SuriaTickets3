@@ -1,6 +1,6 @@
     # [SuriaTickets 3]
 
-![Logo](./public/img/suria_sin_fondo.png)
+![Logo](../public/img/suria_sin_fondo.png)
 
 Lo mejor del entretenimiento en vivo, recitales de los mejores artistas Nacionales e Internacionales utilizando un sistema de ticketing innovador. Todo en un solo sitio.
 

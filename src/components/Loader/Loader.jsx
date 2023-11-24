@@ -1,9 +1,9 @@
-import { Waveform } from "@uiball/loaders";
+import { Momentum } from "@uiball/loaders";
 
 const Loader = () => {
   return (
     <div>
-      <Waveform size={40} lineWeight={3.5} speed={1} color="red" />
+      <Momentum size={100} lineWeight={10} speed={1} color="black" />
     </div>
   );
 };

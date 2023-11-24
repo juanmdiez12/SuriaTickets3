@@ -1,35 +1,41 @@
 import Card from "react-bootstrap/Card";
-import { Counter } from "../Counter";
+import "./ItemDetail.css";
+import { ItemQuantitySelector } from "./ItemQuantitySelector";
 import { Loader } from "../Loader";
+import { AddItemButton } from "./AddItemButton";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Description } from "./Description";
 
 export const ItemDetail = (props) => {
-  const { product, loading } = props;
+  const { product, loading, addToCart } = props;
+
+  const [count, setCount] = useState(1);
+
+  const onClickAddToCart = () => {
+    addToCart(product, count);
+    toast.success("Se ha añadido al carrito");
+  };
+
   return loading ? (
     <Loader />
-  ) : (
-    <div className="render">
-      <div className="welcome">
-        <h1 style={{ fontWeight: "lighter", textTransform: "uppercase" }}>Detalles del show</h1>
-      </div>
-      {product ? (
-        <div>
-          <Card className="cardProduct" key={product.id}>
-            <Card.Img className="imgProduct" variant="top" src={`/images/${product.img}`} />
-            <span className="cardContent">
-              <h2>{product.name}</h2>
-              <p className="productParagraph">ID: {product.id}</p>
-              <p className="productParagraph">Precio: ${product.price}</p>
-              <p className="productParagraph">Artista: {product.title}</p>
-              <p className="productParagraph">Descripcion: {product.description}</p>
-              <Counter />
-            </span>
-          </Card>
+  ) : product ? (
+    <div className="cardItemDetail">
+      <Card className="cardProduct" key={product.id}>
+        <Card.Img className="imgProduct" variant="top" src={`/images/${product.img}`} />
+        <div className="cardDetail">
+          <Description product={product} />
+          <ItemQuantitySelector setCount={setCount} count={count} />
+          <AddItemButton onClickAddToCart={onClickAddToCart} />
+          <ToastContainer position="top-center" />
         </div>
-      ) : (
-        <p>Show no encontrado</p>
-      )}
+      </Card>
     </div>
+  ) : (
+    <p>Show no encontrado</p>
   );
 };
 
 export default ItemDetail;
+

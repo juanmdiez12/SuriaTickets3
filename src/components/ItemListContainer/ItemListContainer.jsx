@@ -38,7 +38,13 @@ function ItemListContainer(props) {
       <div className="render">
         <div className="welcome">
           <h1 className="greeting">
-            {props.greeting} {category.name}
+            <span>
+              <img src="./public/images/sol.png" alt="Sol Logo" class="sunLogo1"/>
+            </span>
+              {props.greeting} {category.name}
+            <span>
+              <img src="./public/images/sol.png" alt="Sol Logo" class="sunLogo2"/>
+            </span>
           </h1>
         </div>
         <ItemList products={products} loading={loading} />

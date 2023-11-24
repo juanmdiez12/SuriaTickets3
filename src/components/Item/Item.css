@@ -8,7 +8,7 @@
   font-size: 1.2rem;
   border-radius: 10px;
   background-color: black;
-  box-shadow: 1px 5px 5px black;
+  box-shadow: 5px 10px 10px black;
   border-color: red;
 }
 .img {
@@ -38,9 +38,10 @@
 }
 
 .buttonDetails {
-  background-color: rgb(194, 24, 24);
-  color: #fff;
-  border-color: black;
+  background-color: white;
+  color: black;
+  border-color: red;
+  border-width: 2px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: lighter;
@@ -51,9 +52,10 @@
 }
 
 .buttonDetails:hover {
-  background-color: black;
-  color: #fff;
-  border-color: red;
+  background-color: red;
+  color: black;
+  border-color: white;
+  border-width: 2px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: lighter;

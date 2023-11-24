@@ -1,0 +1,36 @@
+.counterBorder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  border-radius: 50px;
+  padding: 0px 5px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.counterStyle {
+  margin: 10px 10px;
+  background-color: black;
+  border: 2px solid red;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.counterStyle:hover {
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+}
+
+.countSpan {
+  color: black;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

@@ -18,3 +18,13 @@
   color: #000;
   text-transform: uppercase;
 }
+
+.sunLogo1 {
+  width: 100px;
+  rotate: -90deg;
+}
+
+.sunLogo2 {
+  width: 100px;
+  rotate: 90deg;
+}

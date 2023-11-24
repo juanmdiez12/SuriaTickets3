@@ -1,12 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ItemListContainer, ItemDetailContainer } from "./components"; // Barrel de componentes
+import { ItemListContainer, ItemDetailContainer } from "./components";
+import CartContextProvider from "./context/CartContext";
+import CartContainer from "./components/CartContainer/CartContainer";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <ItemListContainer greeting="Bienvenidos a SuriaTickets" />,
+    element: <ItemListContainer greeting="Bienvenido a SuriaTickets" />,
   },
   {
     path: "/category/:id",
@@ -16,10 +18,18 @@ const routes = createBrowserRouter([
     path: "/item/:id",
     element: <ItemDetailContainer />,
   },
+  {
+    path: "/cart",
+    element: <CartContainer />,
+  },
 ]);
 
 function App() {
-  return <RouterProvider router={routes} />;
+  return (
+    <CartContextProvider>
+      <RouterProvider router={routes} />
+    </CartContextProvider>
+  );
 }
 
 export default App;

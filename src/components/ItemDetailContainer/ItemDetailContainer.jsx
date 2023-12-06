@@ -28,10 +28,10 @@ function ItemDetailContainer() {
       <div className="render">
         <div className="welcome">
           <h1  className="greeting"> <span>
-              <img src="../../public/images/sol.png" alt="Sol Logo" class="sunLogo1"/>
+              <img src="../../public/images/sol.png" alt="Sol Logo" className="sunLogo1"/>
             </span>Detalles
           <span>
-              <img src="../../public/images/sol.png" alt="Sol Logo" class="sunLogo2"/>
+              <img src="../../public/images/sol.png" alt="Sol Logo" className="sunLogo2"/>
             </span>
           </h1>
         </div>

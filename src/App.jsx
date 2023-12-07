@@ -15,7 +15,7 @@ const routes = createBrowserRouter([
     element: <ItemListContainer />,
   },
   {
-    path: "/item/:id",
+    path: "/product/:id",
     element: <ItemDetailContainer />,
   },
   {
